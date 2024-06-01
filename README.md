@@ -1,3 +1,4 @@
 # To Run the codes
 
-## Use :- `g++ -o 1 file.cpp ; ./1`
+## 1. `cd src`
+## 2. Run : `g++ -o 1 fileName.cpp ; ./1`
