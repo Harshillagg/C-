@@ -22,29 +22,28 @@ int main()
     string s = "A man, a plan, a canal: Panama";
 
     int n = s.length();
-    int start =0;
-    int end = n-1;
-    while(start <= end)
+    int start = 0;
+    int end = n - 1;
+
+    while (start < end)
     {
-        if (valid(s[start]) && valid(s[end]))
+        if (!valid(s[start]))
         {
-            if(lower(s[start]) == lower(s[end])){
-                start++, end--;
-            }
-            else{
-                cout<<"not paindrome";
-                break;
-            } 
-        }
-        else if(!valid(s[start])){
             start++;
-        }   
-        else end--;
+        }
+        else if (!valid(s[end]))
+        {
+            end--;
+        }
+        else if (lower(s[start++]) != lower(s[end--]))
+        {
+            cout << "no";
+            break;
+        }
     }
-    cout<<"palindrome";
+    cout << "palindrome";
 
     return 0;
-
 
     // int end = ans.length();
     // while (start < end)
