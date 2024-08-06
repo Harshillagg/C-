@@ -8,7 +8,7 @@ void insertAtBottom(stack<int>& s, int value) {
     s.push(value);
     return;
   }
-  //1 case hum krenge and baaki recursion karega
+  
   int topElement = s.top();
   s.pop();
 
