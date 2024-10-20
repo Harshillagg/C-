@@ -12,5 +12,6 @@ int main(){
     Bird *bird = new Pigeion();
     birdDoesSomething(bird);
     // interface same h but functionality alag ho skti h ya changes ho skte h humme code mai koi change nhi krna
+    
     return 0;
 }
